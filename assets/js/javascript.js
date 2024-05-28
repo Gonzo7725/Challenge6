@@ -110,7 +110,7 @@ function fiveDayForecast(cityName){
 
 
 function search(){
-    var cityName=searchInputEl.value
+    var cityName=searchInputEl.value.trim()
     if(cityName){
         getCurrentWeather(cityName)
         fiveDayForecast(cityName)
