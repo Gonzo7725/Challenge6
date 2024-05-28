@@ -15,7 +15,7 @@ In this weeks chalenge we were required to create a weather dashboard that provi
 
 ## Usage
 
-The link of the webpage is: 
+The link of the webpage is: https://gonzo7725.github.io/Challenge6-Weather-Dashboard/
 
 Step 1:Load the webpage.
 Step 2:Type a city name into searchbar.
