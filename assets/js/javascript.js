@@ -10,7 +10,7 @@ displayHistory()
 
 function displayHistory(){
     historyBtnEl.innerHTML=""
-    for(var i=0; i<historyArr.length; i++){
+    for(var i = 0; i < historyArr.length; i++){
         historyBtnEl.innerHTML=historyBtnEl.innerHTML+`<button type="button" class="btn bg-secondary w-100 mx-2 my-1">${historyArr[i]}</button>`
     }
 }
@@ -59,7 +59,7 @@ function fiveDayForecast(cityName){
         console.log(data)
         fiveDayEl.textContent=""
 
-        for(var i=3; i<data.list.length; i=i+8){
+        for(var i = 3; i < data.list.length; i=i+8){
 
             var fiveDayArray=data.list
             console.log(fiveDayArray[i])
@@ -86,6 +86,17 @@ function fiveDayForecast(cityName){
             pTemp.classList="card-text"
             pTemp.textContent=" temp: "+fiveDayArray[i].main.temp
             divBody.appendChild(pTemp)
+
+            var pWind=document.createElement("p")
+            pWind.classList="card-text"
+            pWind.textContent=" wind: "+fiveDayArray[i].wind.speed
+            divBody.appendChild(pWind)
+
+            var pHumidity=document.createElement("p")
+            pHumidity.classList="card-text"
+            pHumidity.textContent=" humidity: "+fiveDayArray[i].main.humidity
+            divBody.appendChild(pHumidity)
+
             divCard.appendChild(divBody)
             divCol.appendChild(divCard)
 

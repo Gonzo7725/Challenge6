@@ -1,0 +1,37 @@
+*{
+    background-color: rgb(209, 209, 209);
+    height: auto;
+
+}
+
+body{
+    height: auto;
+    width: auto;
+}
+header{
+    justify-content: center;
+    margin-top: 0;  
+}
+header.row{
+    background-color: orange !important;
+    height: 3%;
+    color: black !important;
+}
+h1{
+    text-size-adjust: 100%;
+    text-transform: capitalize;
+}
+h1.col-12{
+    background-color: green;
+    text-decoration: underline;  
+}
+#search-btn{
+    background-color: orange !important;
+}
+.btn.bg-secondary{
+    background-color: green !important;
+}
+a{
+    background-color: green !important;
+    
+}
