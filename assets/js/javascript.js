@@ -53,7 +53,7 @@ function fiveDayForecast(cityName){
 
     fetch(url)
     .then(function(response){
-        return response.json
+        return response.json()
     })
     .then(function(data){
         console.log(data)
